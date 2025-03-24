@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="400" Height="450"
+        x:Class="BMIcalc.MainWindow"
+        Title="BMI计算器">
+	<StackPanel Margin="2,2,2,2">
+		<TextBlock Text="身高（米）："/>
+		<TextBox Name="bmi_height"/>
+		<TextBlock Text="体重（千克）"/>
+		<TextBox Name="bmi_bodymass"/>
+		<Button Content="计算" Margin="0,2,0,0" Name="bmi_calc" HorizontalAlignment="Center" Click="bmi_calc_Click"/>
+		<Separator/>
+		<TextBlock Text="BMI："/>
+		<TextBox Name="bmi_result"/>
+		<TextBlock Text="解读："/>
+		<TextBox Name="bmi_interpret"/>
+	</StackPanel>
+</Window>
